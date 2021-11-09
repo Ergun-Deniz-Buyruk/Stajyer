@@ -12,5 +12,11 @@
     <string name="ogrenciNo">Öğrenci numaranızı giriniz.</string>
     <string name="kayit_ol_butonu">Kayıt Ol.</string>
     <string name="hesabin_yok_mu">Hesabın yok mu?</string>
+    <string name="sifreni_mi_unuttun_toast_mesaji">Bu özelliğimiz şu anda hizmet verememektedir.</string>
+    <string name="email_veya_sifre_bos_toasti">E-postanız veya şifreniz boş. Lütfen tekrar deneyiniz.</string>
+    <string name="ogrenci_basarili_kayit_yapildi">Öğrenci kaydınız başarıyla tamamlandı. Lütfen giriş yapınız.</string>
+    <string name="ogretmen_basarili_kayit_yapildi">Öğretmen kaydınız başarıyla tamamlandı. Lütfen giriş yapınız.</string>
+    <string name="bakim_plani_ekle">Bakım Planı Ekle.</string>
+    <string name="cikis_yap">Güvenli Çıkış Yap.</string>
 
 </resources>
