@@ -1,6 +1,5 @@
 package com.ergundenizbuyruk.stajyer;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class OgrenciFragment extends Fragment {
+public class OgrenciKayitFragment extends Fragment {
 
-    public OgrenciFragment() {
+    public OgrenciKayitFragment() {
         // Required empty public constructor
     }
     @Override
@@ -28,38 +27,25 @@ public class OgrenciFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ogrenci, container, false);
+        return inflater.inflate(R.layout.fragment_ogrenci_kayit, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button girisYap = view.findViewById(R.id.girisButonu);
-        Button kayitOlaGitButonu = view.findViewById(R.id.kayitOlaGitButonu);
-
-        girisYap.setOnClickListener(new View.OnClickListener() {
+        Button kayitOlButonu = view.findViewById(R.id.kayitOlButonu);
+        kayitOlButonu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                girisYap(v);
-            }
-        });
-
-        kayitOlaGitButonu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                kayitOlaGit(v);
+                GirisFragmentaGit(v);
             }
         });
     }
 
-    public void girisYap(View view) {
-        Intent intent = new Intent(view.getContext(), OgrenciAnaSayfa.class);
-        startActivity(intent);
-    }
-
-    public void kayitOlaGit(View view) {
-        NavDirections action = OgrenciFragmentDirections.actionOgrenciFragmentToKayitFragment();
+    public void GirisFragmentaGit(View view) {
+        NavDirections action = OgrenciKayitFragmentDirections
+                .actionOgrenciKayitFragmentToGirisFragment();
         Navigation.findNavController(view).navigate(action);
     }
 }

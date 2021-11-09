@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal|top"
-    tools:context=".OgretmenFragment">
+    tools:context=".OgretmenGirisFragment">
 
     <EditText
         android:id="@+id/epostaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/eposta_girisi"
+        android:autofillHints="emailAddress"
         android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/sifre_girisi"
+        android:autofillHints="password"
         android:inputType="textPassword"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
@@ -40,7 +42,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sifreniMiUnuttun"
+        android:id="@+id/sifreniMiUnuttunTextView"
         android:gravity="center"
         android:text="@string/sifreniMiUnuttun"
         android:textColor="#455AD3"
@@ -57,11 +59,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/kayitOlTextView"
+            android:id="@+id/hesabinYokMuTextView"
             android:gravity="center"
             android:text="@string/hesabin_yok_mu"
+            android:textColor="#455AD3"
             android:textSize="20sp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <Button
             android:id="@+id/kayitOlaGitButonu"

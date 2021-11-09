@@ -14,9 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class OgretmenFragment extends Fragment {
+public class OgrenciGirisFragment extends Fragment {
 
-    public OgretmenFragment() {
+    public OgrenciGirisFragment() {
         // Required empty public constructor
     }
     @Override
@@ -28,7 +28,7 @@ public class OgretmenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ogretmen, container, false);
+        return inflater.inflate(R.layout.fragment_ogrenci_giris, container, false);
     }
 
     @Override
@@ -51,15 +51,16 @@ public class OgretmenFragment extends Fragment {
                 kayitOlaGit(v);
             }
         });
-
     }
+
     public void girisYap(View view) {
-        Intent intent = new Intent(view.getContext(), OgretmenAnaSayfa.class);
+        Intent intent = new Intent(view.getContext(), OgrenciAnaSayfa.class);
         startActivity(intent);
     }
 
     public void kayitOlaGit(View view) {
-        NavDirections action = OgretmenFragmentDirections.actionOgretmenFragmentToKayitFragment();
+        NavDirections action = OgrenciGirisFragmentDirections
+                .actionOgrenciGirisFragmentToOgrenciKayitFragment();
         Navigation.findNavController(view).navigate(action);
     }
 }

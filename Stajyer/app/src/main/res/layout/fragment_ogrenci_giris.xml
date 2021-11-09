@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal|top"
-    tools:context=".OgrenciFragment">
+    tools:context=".OgrenciGirisFragment">
 
     <EditText
         android:id="@+id/epostaEditText"
@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/eposta_girisi"
         android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="150dp"
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/sifre_girisi"
+        android:autofillHints="password"
         android:inputType="textPassword"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
@@ -40,28 +42,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sifreniMiUnuttun"
+        android:id="@+id/sifreniMiUnuttunTextView"
         android:gravity="center"
         android:text="@string/sifreniMiUnuttun"
         android:textColor="#455AD3"
         android:textSize="20sp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/kayitOlTextView"
+            android:id="@+id/hesabinYokMuTextView"
             android:gravity="center"
             android:text="@string/hesabin_yok_mu"
+            android:textColor="#455AD3"
             android:textSize="20sp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginEnd="10dp"/>
 
         <Button
             android:id="@+id/kayitOlaGitButonu"

@@ -4,44 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
     app:startDestination="@id/girisFragment">
-
     <fragment
         android:id="@+id/girisFragment"
         android:name="com.ergundenizbuyruk.stajyer.GirisFragment"
         android:label="fragment_giris"
         tools:layout="@layout/fragment_giris" >
         <action
-            android:id="@+id/action_girisFragment_to_ogrenciFragment"
-            app:destination="@id/ogrenciFragment" />
+            android:id="@+id/action_girisFragment_to_ogrenciGirisFragment"
+            app:destination="@id/ogrenciGirisFragment" />
         <action
-            android:id="@+id/action_girisFragment_to_ogretmenFragment"
-            app:destination="@id/ogretmenFragment" />
+            android:id="@+id/action_girisFragment_to_ogretmenGirisFragment"
+            app:destination="@id/ogretmenGirisFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ogrenciFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgrenciFragment"
-        android:label="fragment_ogretmen"
-        tools:layout="@layout/fragment_ogretmen" >
+        android:id="@+id/ogrenciGirisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgrenciGirisFragment"
+        android:label="fragment_ogrenci_giris"
+        tools:layout="@layout/fragment_ogrenci_giris" >
         <action
-            android:id="@+id/action_ogrenciFragment_to_kayitFragment"
-            app:destination="@id/kayitFragment" />
+            android:id="@+id/action_ogrenciGirisFragment_to_ogrenciKayitFragment"
+            app:destination="@id/ogrenciKayitFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ogretmenFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgretmenFragment"
-        android:label="fragment_ogretmen"
-        tools:layout="@layout/fragment_ogretmen" >
+        android:id="@+id/ogretmenGirisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgretmenGirisFragment"
+        android:label="fragment_ogretmen_giris"
+        tools:layout="@layout/fragment_ogretmen_giris" >
         <action
-            android:id="@+id/action_ogretmenFragment_to_kayitFragment"
-            app:destination="@id/kayitFragment" />
+            android:id="@+id/action_ogretmenGirisFragment_to_ogretmenKayitFragment"
+            app:destination="@id/ogretmenKayitFragment" />
     </fragment>
     <fragment
-        android:id="@+id/kayitFragment"
-        android:name="com.ergundenizbuyruk.stajyer.KayitFragment"
-        android:label="fragment_kayit"
-        tools:layout="@layout/fragment_kayit" >
+        android:id="@+id/ogrenciKayitFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgrenciKayitFragment"
+        android:label="fragment_ogrenci_kayit"
+        tools:layout="@layout/fragment_ogrenci_kayit" >
         <action
-            android:id="@+id/action_kayitFragment_to_girisFragment"
+            android:id="@+id/action_ogrenciKayitFragment_to_girisFragment"
+            app:destination="@id/girisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogretmenKayitFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgretmenKayitFragment"
+        android:label="fragment_ogretmen_kayit"
+        tools:layout="@layout/fragment_ogretmen_kayit" >
+        <action
+            android:id="@+id/action_ogretmenKayitFragment_to_girisFragment"
             app:destination="@id/girisFragment" />
     </fragment>
 </navigation>

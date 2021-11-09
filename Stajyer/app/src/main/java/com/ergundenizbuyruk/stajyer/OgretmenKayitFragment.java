@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class KayitFragment extends Fragment {
+public class OgretmenKayitFragment extends Fragment {
 
-    public KayitFragment() {
+    public OgretmenKayitFragment() {
         // Required empty public constructor
     }
     @Override
@@ -26,25 +26,24 @@ public class KayitFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kayit, container, false);
+        return inflater.inflate(R.layout.fragment_ogretmen_kayit, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button button = view.findViewById(R.id.kayitOlButonu);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button kayitOlButonu = view.findViewById(R.id.kayitOlButonu);
+        kayitOlButonu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 GirisFragmentaGit(v);
             }
         });
-    }
 
+    }
     public void GirisFragmentaGit(View view) {
-        NavDirections action = KayitFragmentDirections.actionKayitFragmentToGirisFragment();
+        NavDirections action = OgretmenKayitFragmentDirections.actionOgretmenKayitFragmentToGirisFragment();
         Navigation.findNavController(view).navigate(action);
     }
 }
