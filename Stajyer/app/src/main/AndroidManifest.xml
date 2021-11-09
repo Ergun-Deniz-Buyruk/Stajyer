@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stajyer">
         <activity
+            android:name=".OgretmenAnaSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".OgrenciAnaSayfa"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

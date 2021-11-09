@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_girisFragment_to_ogrenciFragment"
+            app:destination="@id/ogrenciFragment" />
+        <action
+            android:id="@+id/action_girisFragment_to_ogretmenFragment"
+            app:destination="@id/ogretmenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogrenciFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgrenciFragment"
+        android:label="fragment_ogretmen"
+        tools:layout="@layout/fragment_ogretmen" >
+        <action
+            android:id="@+id/action_ogrenciFragment_to_kayitFragment"
+            app:destination="@id/kayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogretmenFragment"
+        android:name="com.ergundenizbuyruk.stajyer.OgretmenFragment"
+        android:label="fragment_ogretmen"
+        tools:layout="@layout/fragment_ogretmen" >
+        <action
+            android:id="@+id/action_ogretmenFragment_to_kayitFragment"
+            app:destination="@id/kayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.ergundenizbuyruk.stajyer.KayitFragment"
+        android:label="fragment_kayit"
+        tools:layout="@layout/fragment_kayit" >
+        <action
+            android:id="@+id/action_kayitFragment_to_girisFragment"
+            app:destination="@id/girisFragment" />
+    </fragment>
+</navigation>

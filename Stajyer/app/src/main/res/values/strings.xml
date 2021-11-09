@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Stajyer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ogrenci_butonu">Ögrenci Girişi</string>
+    <string name="ogretmen_butonu">Öğretmen Girişi</string>
+    <string name="eposta_girisi">E-postanızı giriniz.</string>
+    <string name="sifre_girisi">Şifrenizi giriniz.</string>
+    <string name="giris_butonu">Giriş Yap.</string>
+    <string name="sifreniMiUnuttun">Şifreni mi unuttun?</string>
+    <string name="adSoyad">Ad ve Soyadınızı giriniz.</string>
+    <string name="tc">TC. kimlik numaranızı giriniz.</string>
+    <string name="ogrenciNo">Öğrenci numaranızı giriniz.</string>
+    <string name="kayit_ol_butonu">Kayıt Ol.</string>
+    <string name="hesabin_yok_mu">Hesabın yok mu?</string>
+
 </resources>
