@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stajyer">
         <activity
+            android:name=".BakimPlaniActivity"
+            android:exported="false" />
+        <activity
             android:name=".OgretmenAnaSayfa"
             android:exported="false" />
         <activity

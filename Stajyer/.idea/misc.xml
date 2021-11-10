@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/activity_bakim_plani.xml" value="0.1" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/activity_main.xml" value="0.223731884057971" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/activity_ogrenci_ana_sayfa.xml" value="0.25" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/activity_ogretmen_ana_sayfa.xml" value="0.25" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/fragment_ogretmen.xml" value="0.21920289855072464" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/fragment_ogretmen_giris.xml" value="0.25" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/fragment_ogretmen_kayit.xml" value="0.25" />
+        <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/layout/recycler_row.xml" value="0.24864130434782608" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/menu/menu_ogrenci.xml" value="0.25" />
         <entry key="..\:/Projeler/AndroidStudioProjects/Stajyer/Stajyer/app/src/main/res/menu/menu_ogretmen.xml" value="0.25" />
       </map>

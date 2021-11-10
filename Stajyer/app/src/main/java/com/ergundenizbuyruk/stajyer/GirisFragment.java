@@ -80,6 +80,7 @@ public class GirisFragment extends Fragment {
 
     public void AnaSayfayaGit() {
         Intent intent = new Intent(getContext(), OgrenciAnaSayfa.class);
+        intent.putExtra("ePosta", user.getEmail());
         startActivity(intent);
         try {
             getActivity().finish();

@@ -112,6 +112,7 @@ public class OgrenciGirisFragment extends Fragment {
 
     public void OgrenciAnaSayfayaGit() {
         Intent intent = new Intent(getContext(), OgrenciAnaSayfa.class);
+        intent.putExtra("ePosta", ePosta);
         startActivity(intent);
         try {
             getActivity().finish();

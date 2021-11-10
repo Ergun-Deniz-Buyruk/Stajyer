@@ -5,8 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical"
+    android:gravity="center_horizontal"
     tools:context=".OgretmenKayitFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/saglikyuvasiiki" />
 
     <EditText
         android:id="@+id/adSoyadEditText"
