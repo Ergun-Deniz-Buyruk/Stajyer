@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal|top"
-    tools:context=".OgretmenGirisFragment">
+    tools:context=".Fragments.OgretmenGirisFragment">
 
     <ImageView
         android:id="@+id/imageView2"

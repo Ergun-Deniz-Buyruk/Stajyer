@@ -1,4 +1,4 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Activitys;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.ergundenizbuyruk.stajyer.Adapter.BakimPlanlariAdapter;
+import com.ergundenizbuyruk.stajyer.Classes.BakimPlani;
+import com.ergundenizbuyruk.stajyer.R;
 import com.ergundenizbuyruk.stajyer.databinding.ActivityOgrenciAnaSayfaBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,14 +24,9 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 import java.util.Map;
 
 public class OgrenciAnaSayfa extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.ergundenizbuyruk.stajyer.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class OgretmenAnaSayfa extends AppCompatActivity {

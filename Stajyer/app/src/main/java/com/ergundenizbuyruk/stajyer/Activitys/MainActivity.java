@@ -1,4 +1,4 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 

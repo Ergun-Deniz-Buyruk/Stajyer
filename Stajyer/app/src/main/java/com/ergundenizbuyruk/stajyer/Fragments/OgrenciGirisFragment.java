@@ -1,11 +1,10 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
@@ -13,17 +12,15 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ergundenizbuyruk.stajyer.Activitys.OgrenciAnaSayfa;
+import com.ergundenizbuyruk.stajyer.R;
 import com.ergundenizbuyruk.stajyer.databinding.FragmentOgrenciGirisBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class OgrenciGirisFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Classes;
 
 public class BakimPlani {
     private String hastaAdi;

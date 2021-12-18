@@ -1,12 +1,12 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Adapter;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ergundenizbuyruk.stajyer.Classes.BakimPlani;
 import com.ergundenizbuyruk.stajyer.databinding.RecyclerRowBinding;
 
 import java.util.ArrayList;

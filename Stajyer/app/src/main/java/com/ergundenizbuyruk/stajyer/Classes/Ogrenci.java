@@ -1,27 +1,24 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Classes;
 
 import java.util.ArrayList;
 
-public class Ogretmen {
-
+public class Ogrenci {
     private String adSoyad;
     private String tcNo;
+    private String ogrenciNo;
     private String ePosta;
     private String sifre;
-    private ArrayList<Ogrenci> ogrencileriArrayList;
 
-    public Ogretmen(String adSoyad, String tcNo, String ePosta, String sifre,
-                   ArrayList<Ogrenci> ogrencileriArrayList) {
+    public Ogrenci(String adSoyad, String tcNo, String ogrenciNo,
+                   String ePosta, String sifre) {
 
         this.setAdSoyad(adSoyad);
         this.setTcNo(tcNo);
+        this.setOgrenciNo(ogrenciNo);
         this.setePosta(ePosta);
         this.setSifre(sifre);
-        if(ogrencileriArrayList == null) {
-            ogrencileriArrayList = new ArrayList<>();
-        }
-        this.setOgrencileriArrayList(ogrencileriArrayList);
     }
+
 
     public String getAdSoyad() {
         return adSoyad;
@@ -37,6 +34,14 @@ public class Ogretmen {
 
     public void setTcNo(String tcNo) {
         this.tcNo = tcNo;
+    }
+
+    public String getOgrenciNo() {
+        return ogrenciNo;
+    }
+
+    public void setOgrenciNo(String ogrenciNo) {
+        this.ogrenciNo = ogrenciNo;
     }
 
     public String getePosta() {
@@ -55,11 +60,4 @@ public class Ogretmen {
         this.sifre = sifre;
     }
 
-    public ArrayList<Ogrenci> getOgrencileriArrayList() {
-        return ogrencileriArrayList;
-    }
-
-    public void setOgrencileriArrayList(ArrayList<Ogrenci> ogrencileriArrayList) {
-        this.ogrencileriArrayList = ogrencileriArrayList;
-    }
 }

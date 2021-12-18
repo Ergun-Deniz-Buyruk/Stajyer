@@ -6,7 +6,7 @@
     app:startDestination="@id/girisFragment">
     <fragment
         android:id="@+id/girisFragment"
-        android:name="com.ergundenizbuyruk.stajyer.GirisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.Fragments.GirisFragment"
         android:label="fragment_giris"
         tools:layout="@layout/fragment_giris" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/ogrenciGirisFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgrenciGirisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.Fragments.OgrenciGirisFragment"
         android:label="fragment_ogrenci_giris"
         tools:layout="@layout/fragment_ogrenci_giris" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/ogretmenGirisFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgretmenGirisFragment"
+        android:name="com.ergundenizbuyruk.stajyer.Fragments.OgretmenGirisFragment"
         android:label="fragment_ogretmen_giris"
         tools:layout="@layout/fragment_ogretmen_giris" >
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/ogrenciKayitFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgrenciKayitFragment"
+        android:name="com.ergundenizbuyruk.stajyer.Fragments.OgrenciKayitFragment"
         android:label="fragment_ogrenci_kayit"
         tools:layout="@layout/fragment_ogrenci_kayit" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/ogretmenKayitFragment"
-        android:name="com.ergundenizbuyruk.stajyer.OgretmenKayitFragment"
+        android:name="com.ergundenizbuyruk.stajyer.Fragments.OgretmenKayitFragment"
         android:label="fragment_ogretmen_kayit"
         tools:layout="@layout/fragment_ogretmen_kayit" >
         <action

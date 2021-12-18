@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stajyer">
         <activity
-            android:name=".BakimPlaniActivity"
+            android:name=".Activitys.BakimPlaniActivity"
             android:exported="false" />
         <activity
-            android:name=".OgretmenAnaSayfa"
+            android:name=".Activitys.OgretmenAnaSayfa"
             android:exported="false" />
         <activity
-            android:name=".OgrenciAnaSayfa"
+            android:name=".Activitys.OgrenciAnaSayfa"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activitys.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

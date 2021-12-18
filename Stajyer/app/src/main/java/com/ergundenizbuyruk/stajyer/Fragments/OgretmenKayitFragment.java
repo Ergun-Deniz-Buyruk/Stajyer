@@ -1,4 +1,4 @@
-package com.ergundenizbuyruk.stajyer;
+package com.ergundenizbuyruk.stajyer.Fragments;
 
 import android.os.Bundle;
 
@@ -14,12 +14,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.ergundenizbuyruk.stajyer.Classes.Ogretmen;
+import com.ergundenizbuyruk.stajyer.R;
 import com.ergundenizbuyruk.stajyer.databinding.FragmentOgretmenKayitBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 
