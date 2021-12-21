@@ -7,8 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import com.ergundenizbuyruk.stajyer.Classes.BakimPlani;
+import com.ergundenizbuyruk.stajyer.Classes.*;
 import com.ergundenizbuyruk.stajyer.R;
 import com.ergundenizbuyruk.stajyer.databinding.ActivityBakimPlaniBinding;
 import com.google.android.gms.tasks.OnFailureListener;

@@ -1,6 +1,5 @@
 package com.ergundenizbuyruk.stajyer.Classes;
 
-import java.util.ArrayList;
 
 public class Ogrenci {
     private String adSoyad;

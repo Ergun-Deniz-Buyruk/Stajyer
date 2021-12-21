@@ -2,21 +2,19 @@ package com.ergundenizbuyruk.stajyer.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.ergundenizbuyruk.stajyer.Classes.BakimPlani;
+import com.ergundenizbuyruk.stajyer.Classes.*;
 import com.ergundenizbuyruk.stajyer.databinding.RecyclerRowBinding;
-
 import java.util.ArrayList;
+
 
 public class BakimPlanlariAdapter extends RecyclerView.Adapter<BakimPlanlariAdapter.BakimPlaniHolder> {
 
-    private ArrayList<BakimPlani> bakimPlaniArrayList;
+    private ArrayList<BakimPlani> bakimPlanArrayList;
 
     public BakimPlanlariAdapter(ArrayList<BakimPlani> bakimPlaniArrayList) {
-        this.bakimPlaniArrayList = bakimPlaniArrayList;
+        bakimPlanArrayList = bakimPlaniArrayList;
     }
 
     public class BakimPlaniHolder extends RecyclerView.ViewHolder {
@@ -40,12 +38,12 @@ public class BakimPlanlariAdapter extends RecyclerView.Adapter<BakimPlanlariAdap
     @Override
     public void onBindViewHolder(@NonNull BakimPlaniHolder holder, int position) {
         holder.recyclerRowBinding.recyclerViewHastaAdiText
-                .setText(bakimPlaniArrayList.get(position).getHastaAdi());
+                .setText(bakimPlanArrayList.get(position).getHastaAdi());
     }
 
     @Override
     public int getItemCount() {
-        return bakimPlaniArrayList.size();
+        return bakimPlanArrayList.size();
     }
 
 
